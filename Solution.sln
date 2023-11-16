@@ -3,6 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{610B2CEC-957A-4467-A745-4828E3F4B0C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{380A5469-4AC6-4C3E-A717-BEC352360349}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{175C56E0-0101-4EE2-8B45-39BDE7DD72BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHub.API", "Source\Common\PizzaHub.API\PizzaHub.API.csproj", "{106BA666-5A38-4A49-ABC6-C0CE0F50C4F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHub.Application", "Source\Common\PizzaHub.Application\PizzaHub.Application.csproj", "{CDCB4929-2175-400C-B288-338763E54E6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHub.Domain", "Source\Common\PizzaHub.Domain\PizzaHub.Domain.csproj", "{A74EA2E1-46C1-4370-BC72-FF46713D861A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHub.Infrastructure", "Source\Common\PizzaHub.Infrastructure\PizzaHub.Infrastructure.csproj", "{DF13353E-E0E0-48F4-932C-8055D0917C75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHub.Exceptions", "Source\Shared\PizzaHub.Exceptions\PizzaHub.Exceptions.csproj", "{0E195D69-FF27-4828-BE62-F8C707F802C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +26,36 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{380A5469-4AC6-4C3E-A717-BEC352360349} = {610B2CEC-957A-4467-A745-4828E3F4B0C7}
+		{175C56E0-0101-4EE2-8B45-39BDE7DD72BF} = {610B2CEC-957A-4467-A745-4828E3F4B0C7}
+		{106BA666-5A38-4A49-ABC6-C0CE0F50C4F3} = {380A5469-4AC6-4C3E-A717-BEC352360349}
+		{CDCB4929-2175-400C-B288-338763E54E6A} = {380A5469-4AC6-4C3E-A717-BEC352360349}
+		{A74EA2E1-46C1-4370-BC72-FF46713D861A} = {380A5469-4AC6-4C3E-A717-BEC352360349}
+		{DF13353E-E0E0-48F4-932C-8055D0917C75} = {380A5469-4AC6-4C3E-A717-BEC352360349}
+		{0E195D69-FF27-4828-BE62-F8C707F802C0} = {175C56E0-0101-4EE2-8B45-39BDE7DD72BF}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{106BA666-5A38-4A49-ABC6-C0CE0F50C4F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106BA666-5A38-4A49-ABC6-C0CE0F50C4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106BA666-5A38-4A49-ABC6-C0CE0F50C4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{106BA666-5A38-4A49-ABC6-C0CE0F50C4F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDCB4929-2175-400C-B288-338763E54E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDCB4929-2175-400C-B288-338763E54E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDCB4929-2175-400C-B288-338763E54E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCB4929-2175-400C-B288-338763E54E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A74EA2E1-46C1-4370-BC72-FF46713D861A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A74EA2E1-46C1-4370-BC72-FF46713D861A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A74EA2E1-46C1-4370-BC72-FF46713D861A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A74EA2E1-46C1-4370-BC72-FF46713D861A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF13353E-E0E0-48F4-932C-8055D0917C75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF13353E-E0E0-48F4-932C-8055D0917C75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF13353E-E0E0-48F4-932C-8055D0917C75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF13353E-E0E0-48F4-932C-8055D0917C75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E195D69-FF27-4828-BE62-F8C707F802C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E195D69-FF27-4828-BE62-F8C707F802C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E195D69-FF27-4828-BE62-F8C707F802C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E195D69-FF27-4828-BE62-F8C707F802C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
