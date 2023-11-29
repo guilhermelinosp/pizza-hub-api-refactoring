@@ -3,7 +3,19 @@
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
+        <Nullable>disable</Nullable>
     </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Dtos\Requests\Categories\" />
+      <Folder Include="Dtos\Requests\Items\" />
+      <Folder Include="Dtos\Requests\Orders\" />
+      <Folder Include="Dtos\Requests\Products\" />
+      <Folder Include="Dtos\Responses\Categories\" />
+      <Folder Include="Dtos\Responses\Items\" />
+      <Folder Include="Dtos\Responses\Orders\" />
+      <Folder Include="Dtos\Responses\Products\" />
+      <Folder Include="Enum\" />
+    </ItemGroup>
 
 </Project>

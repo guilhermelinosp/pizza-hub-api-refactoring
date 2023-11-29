@@ -10,12 +10,23 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{175C56E0-0101-4EE2-8B45-39BDE7DD72BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHub.Application", "Source\Common\PizzaHub.Application\PizzaHub.Application.csproj", "{CDCB4929-2175-400C-B288-338763E54E6A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{584F3300-1EC1-4DFE-9B0B-E5B831ECCFFE} = {584F3300-1EC1-4DFE-9B0B-E5B831ECCFFE}
+		{DF13353E-E0E0-48F4-932C-8055D0917C75} = {DF13353E-E0E0-48F4-932C-8055D0917C75}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHub.Domain", "Source\Common\PizzaHub.Domain\PizzaHub.Domain.csproj", "{A74EA2E1-46C1-4370-BC72-FF46713D861A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHub.Infrastructure", "Source\Common\PizzaHub.Infrastructure\PizzaHub.Infrastructure.csproj", "{DF13353E-E0E0-48F4-932C-8055D0917C75}"
+	ProjectSection(ProjectDependencies) = postProject
+		{584F3300-1EC1-4DFE-9B0B-E5B831ECCFFE} = {584F3300-1EC1-4DFE-9B0B-E5B831ECCFFE}
+		{A74EA2E1-46C1-4370-BC72-FF46713D861A} = {A74EA2E1-46C1-4370-BC72-FF46713D861A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHub.API", "Source\Common\PizzaHub.API\PizzaHub.API.csproj", "{FC8AE8FC-9757-4A5D-BC96-987A871371F5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CDCB4929-2175-400C-B288-338763E54E6A} = {CDCB4929-2175-400C-B288-338763E54E6A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHub.Exceptions", "Source\Shared\PizzaHub.Exceptions\PizzaHub.Exceptions.csproj", "{584F3300-1EC1-4DFE-9B0B-E5B831ECCFFE}"
 EndProject

@@ -6,4 +6,31 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="12.0.1"/>
+        <PackageReference Include="FluentValidation" Version="11.8.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.13"/>
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3"/>
+        <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="7.0.13"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+        <HintPath>..\..\..\..\..\.nuget\packages\microsoft.aspnetcore.app.ref\7.0.12\ref\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Shared\PizzaHub.Exceptions\PizzaHub.Exceptions.csproj" />
+      <ProjectReference Include="..\PizzaHub.Domain\PizzaHub.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="UseCases\Categories\" />
+      <Folder Include="UseCases\Items\" />
+      <Folder Include="UseCases\Orders\" />
+      <Folder Include="UseCases\Products\" />
+    </ItemGroup>
+
 </Project>

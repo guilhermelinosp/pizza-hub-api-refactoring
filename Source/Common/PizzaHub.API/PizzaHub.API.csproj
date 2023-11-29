@@ -5,17 +5,27 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <UserSecretsId>d9971173-wd3d1-48cb-8d70-5304151a1311</UserSecretsId>
     </PropertyGroup>
-
+    
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.12"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="7.0.0"/>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.14"/>
     </ItemGroup>
 
     <ItemGroup>
       <Content Include="..\..\..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Shared\PizzaHub.Exceptions\PizzaHub.Exceptions.csproj" />
+      <ProjectReference Include="..\PizzaHub.Application\PizzaHub.Application.csproj" />
+      <ProjectReference Include="..\PizzaHub.Domain\PizzaHub.Domain.csproj" />
+      <ProjectReference Include="..\PizzaHub.Infrastructure\PizzaHub.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
